@@ -25,6 +25,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/reports")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000"})
 @PreAuthorize("hasAnyRole('ADMIN', 'PHARMACIST')") // Only authenticated staff can see reports
 public class ReportController {
 
