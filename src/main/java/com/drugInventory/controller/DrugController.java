@@ -28,7 +28,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/drugs")
-
 public class DrugController {
 
     @Autowired

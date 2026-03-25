@@ -21,7 +21,6 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/users")
-
 @PreAuthorize("hasRole('ADMIN')") // All endpoints in this controller require ADMIN role
 public class UserController {
 

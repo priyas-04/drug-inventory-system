@@ -25,7 +25,6 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/reports")
-
 @PreAuthorize("hasAnyRole('ADMIN', 'PHARMACIST')") // Only authenticated staff can see reports
 public class ReportController {
 
